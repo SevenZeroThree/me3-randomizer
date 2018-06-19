@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: './helpers/randomizer.js',
+    entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
         filename: 'helpers.js'

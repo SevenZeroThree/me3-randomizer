@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./helpers/randomizer.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -106,6 +106,18 @@ eval("module.exports = {\"characters\":[{\"name\":\"Human Adept\"},{\"name\":\"H
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _data = __webpack_require__(/*! ../data.json */ \"./data.json\");\n\nvar _data2 = _interopRequireDefault(_data);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Randomizer = function () {\n    function Randomizer() {\n        _classCallCheck(this, Randomizer);\n    }\n\n    _createClass(Randomizer, null, [{\n        key: 'getRandomCharacter',\n        value: function getRandomCharacter() {\n            return _data2.default.characters.length;\n        }\n    }]);\n\n    return Randomizer;\n}();\n\nexports.default = Randomizer;\n\n//# sourceURL=webpack:///./helpers/randomizer.js?");
+
+/***/ }),
+
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _randomizer = __webpack_require__(/*! ./helpers/randomizer */ \"./helpers/randomizer.js\");\n\nvar _randomizer2 = _interopRequireDefault(_randomizer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Index = function Index() {\n    _classCallCheck(this, Index);\n\n    var character = _randomizer2.default.getRandomCharacter();\n    console.log(character);\n};\n\nexports.default = Index;\n\n\nnew Index();\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
