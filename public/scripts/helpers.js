@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./data.json":
+/*!*******************!*\
+  !*** ./data.json ***!
+  \*******************/
+/*! exports provided: characters, weapons, default */
+/***/ (function(module) {
+
+eval("module.exports = {\"characters\":[{\"name\":\"Human Adept\"},{\"name\":\"Human Engineer\"},{\"name\":\"Human Infiltrator\"},{\"name\":\"Human Sentinel\"},{\"name\":\"Human Soldier\"},{\"name\":\"Human Vanguard\"}],\"weapons\":{\"assaultRifles\":[],\"sniperRifles\":[],\"pistols\":[],\"shotguns\":[],\"subMachineGuns\":[]}};\n\n//# sourceURL=webpack:///./data.json?");
+
+/***/ }),
+
 /***/ "./helpers/randomizer.js":
 /*!*******************************!*\
   !*** ./helpers/randomizer.js ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./helpers/randomizer.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data.json */ \"./data.json\");\nvar _data_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data.json */ \"./data.json\", 1);\n\n\nclass Randomizer {\n    static getRandomCharacter() {\n        return _data_json__WEBPACK_IMPORTED_MODULE_0__.characters.length;\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Randomizer);\n\n//# sourceURL=webpack:///./helpers/randomizer.js?");
 
 /***/ })
 
