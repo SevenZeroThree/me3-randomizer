@@ -1,0 +1,39 @@
+{
+    "characters": [
+        {
+            "name": "Human Adept"
+        },
+        {
+            "name": "Human Engineer"
+        },
+        {
+            "name": "Human Infiltrator"
+        },
+        {
+            "name": "Human Sentinel"
+        },
+        {
+            "name": "Human Soldier"
+        },
+        {
+            "name": "Human Vanguard"
+        }
+    ],
+    "weapons": {
+        "assaultRifles": [
+
+        ],
+        "sniperRifles": [
+
+        ],
+        "pistols": [
+
+        ],
+        "shotguns": [
+
+        ],
+        "subMachineGuns": [
+
+        ]
+    }
+}
