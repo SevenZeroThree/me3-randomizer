@@ -6,5 +6,17 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
         filename: 'helpers.js'
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
     }
 };

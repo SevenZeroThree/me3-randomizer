@@ -4,7 +4,9 @@
   "description": "A random class generator for Mass Effect 3 multiplayer.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,16 @@
   },
   "homepage": "https://github.com/christophertobin/me3-randomizer#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.51",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "connect": "^3.6.6",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.9.1",
+    "serve-static": "^1.13.2",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8"
   }

@@ -101,11 +101,11 @@ eval("module.exports = {\"characters\":[{\"name\":\"Human Adept\"},{\"name\":\"H
 /*!*******************************!*\
   !*** ./helpers/randomizer.js ***!
   \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data.json */ \"./data.json\");\nvar _data_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data.json */ \"./data.json\", 1);\n\n\nclass Randomizer {\n    static getRandomCharacter() {\n        return _data_json__WEBPACK_IMPORTED_MODULE_0__.characters.length;\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Randomizer);\n\n//# sourceURL=webpack:///./helpers/randomizer.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _data = __webpack_require__(/*! ../data.json */ \"./data.json\");\n\nvar _data2 = _interopRequireDefault(_data);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Randomizer = function () {\n    function Randomizer() {\n        _classCallCheck(this, Randomizer);\n    }\n\n    _createClass(Randomizer, null, [{\n        key: 'getRandomCharacter',\n        value: function getRandomCharacter() {\n            return _data2.default.characters.length;\n        }\n    }]);\n\n    return Randomizer;\n}();\n\nexports.default = Randomizer;\n\n//# sourceURL=webpack:///./helpers/randomizer.js?");
 
 /***/ })
 
