@@ -2,10 +2,13 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: './index.js',
+    entry: {
+        helpers: './index.js',
+        jQueryRandomizer: './jQuery/jquery.randomizer.js'
+    },
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
-        filename: 'helpers.js'
+        filename: '[name].js'
     },
 
     module: {
