@@ -2,8 +2,8 @@ import Randomizer from './helpers/randomizer';
 
 class Index {
     constructor() {
-        var character = Randomizer.getRandomCharacter();
-        console.log(character);
+        var randomClass = Randomizer.getRandomClass();
+        console.log(randomClass);
     }
 }
 
