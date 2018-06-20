@@ -3,7 +3,7 @@ import Randomizer from './helpers/randomizer';
 class Index {
     constructor() {
         var randomClass = Randomizer.getRandomClass();
-        console.log(randomClass);
+        alert(JSON.stringify(randomClass));
     }
 }
 
