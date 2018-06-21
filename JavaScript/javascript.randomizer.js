@@ -14,6 +14,8 @@ class JavaScriptRandomizer {
 
 JavaScriptRandomizer.generate();
 
-document.getElementById('regenerate-button').addEventListener('click', function() {
+document.getElementById('regenerate-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    
     JavaScriptRandomizer.generate();
 });
