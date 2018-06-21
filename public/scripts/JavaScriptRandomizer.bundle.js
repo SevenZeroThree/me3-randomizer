@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _randomizer = __webpack_require__(/*! ../helpers/randomizer */ \"./helpers/randomizer.js\");\n\nvar _randomizer2 = _interopRequireDefault(_randomizer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_randomizer2.default.getRandomClass();\n\n//# sourceURL=webpack:///./JavaScript/javascript.randomizer.js?");
+eval("\n\nvar _randomizer = __webpack_require__(/*! ../helpers/randomizer */ \"./helpers/randomizer.js\");\n\nvar _randomizer2 = _interopRequireDefault(_randomizer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar randomClass = _randomizer2.default.getRandomClass();\n\nvar characterDiv = document.getElementById('character');\ncharacterDiv.children[0].innerHTML = randomClass.character.name;\n\nvar weaponDiv = document.getElementById('weapon');\nweaponDiv.children[0].innerHTML = randomClass.weapon.name;\n\n//# sourceURL=webpack:///./JavaScript/javascript.randomizer.js?");
 
 /***/ }),
 
