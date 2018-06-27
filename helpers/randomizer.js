@@ -1,10 +1,17 @@
-import data from '../data.json';
+import data from './data';
 
 class Randomizer {
+    static init() {
+        data.saveApiResponse();
+    }
+
     static getRandomClass() {
+        var multiplayerData = data.getMultiplayerData();
+        var weaponClass = this._getRandomItemFromCollection(multiplayerData.weaponClasses);
+
         return {
-            "character": this.getRandomCharacter(),
-            "weapon": this.getRandomWeapon()
+            "character": this._getRandomItemFromCollection(multiplayerData.characters),
+            "weapon": this._getRandomItemFromCollection(weaponClass.weapons)
         };
     }
 

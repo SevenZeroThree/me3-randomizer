@@ -12,7 +12,10 @@ class JavaScriptRandomizer {
     }
 }
 
-JavaScriptRandomizer.generate();
+Randomizer.init();
+
+// TODO: do this differently...
+setTimeout(() => JavaScriptRandomizer.generate(), 1000);
 
 document.getElementById('regenerate-button').addEventListener('click', function(event) {
     event.preventDefault();
