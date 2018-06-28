@@ -3,10 +3,3 @@ description: Whether you are looking for a challenge, or just looking for a new 
 theme: minima
 
 author: Christopher Tobin
-
-header_pages:
- - react.html
- - angular.html
- - ember.html
- - jquery.html
- - javascript.html
