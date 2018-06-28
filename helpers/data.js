@@ -1,22 +1,26 @@
 import axios from 'axios';
 
-class Data {
-    static saveApiResponse() {
-        const sessionKey = 'multiplayerData';
+const sessionKey = 'multiplayerData';
 
+class Data {
+    
+    static getMultiplayerData() {
         var data = sessionStorage.getItem(sessionKey);
         if (data === undefined || data === null) {
-            getDataFromApi()
-            .then((response) => {
-                sessionStorage.setItem(sessionKey, JSON.stringify(response.data));
-            });
+            return saveApiResponse();
         }
-    }
 
-    static getMultiplayerData() {
-        const sessionKey = 'multiplayerData';
-        return JSON.parse(sessionStorage.getItem(sessionKey));
+        return Promise.resolve(JSON.parse(data));
     }
+}
+
+async function saveApiResponse() {
+    return getDataFromApi()
+        .then((response) => {
+            sessionStorage.setItem(sessionKey, JSON.stringify(response.data));
+            return response.data;
+        });
+    
 }
 
 async function getDataFromApi() {

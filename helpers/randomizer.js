@@ -1,18 +1,17 @@
 import data from './data';
 
 class Randomizer {
-    static init() {
-        data.saveApiResponse();
-    }
-
     static getRandomClass() {
-        var multiplayerData = data.getMultiplayerData();
-        var weaponClass = this._getRandomItemFromCollection(multiplayerData.weaponClasses);
+        var randomizer = this;
+        return data.getMultiplayerData()
+            .then((response) => {
+                var weaponClass = randomizer._getRandomItemFromCollection(response.weaponClasses);
 
-        return {
-            "character": this._getRandomItemFromCollection(multiplayerData.characters),
-            "weapon": this._getRandomItemFromCollection(weaponClass.weapons)
-        };
+                return {
+                    "character": randomizer._getRandomItemFromCollection(response.characters),
+                    "weapon": randomizer._getRandomItemFromCollection(weaponClass.weapons)
+                };
+            });
     }
 
     static getRandomCharacter() {
