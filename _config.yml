@@ -1,6 +1,14 @@
-title: Mass Effect 3 Multiplayer Randomizer
-description: Whether you are looking for a challenge, or just looking for a new setup, the Mass Effect 3 Random Class Generator solves all! What setup will you get?
-
+# Theme Settings
 remote_theme: mmistakes/minimal-mistakes
 
-author: Christopher Tobin
+# Site Settings
+locale: en-US
+title: Mass Effect 3 Multiplayer Randomizer
+name: Christopher Tobin
+description: Whether you are looking for a challenge, or just looking for a new setup, the Mass Effect 3 Random Class Generator solves all! What setup will you get?
+url: https://christophertobin.github.io
+baseurl: /me3-randomizer
+repository: christophertobin/me3-randomizer
+
+author: 
+  name: Christopher Tobin
