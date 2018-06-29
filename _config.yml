@@ -4,6 +4,3 @@ description: Whether you are looking for a challenge, or just looking for a new 
 remote_theme: "mmistakes/minimal-mistakes"
 
 author: Christopher Tobin
-
-plugins:
-  - jekyll-remote-theme
