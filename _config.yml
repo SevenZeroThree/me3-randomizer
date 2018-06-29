@@ -1,5 +1,9 @@
 title: Mass Effect 3 Multiplayer Randomizer
 description: Whether you are looking for a challenge, or just looking for a new setup, the Mass Effect 3 Random Class Generator solves all! What setup will you get?
-theme: minimal-mistakes-jekyll
+
+remote_theme: "mmistakes/minimal-mistakes"
 
 author: Christopher Tobin
+
+plugins:
+  - jekyll-remote-theme
