@@ -10,25 +10,5 @@ url: https://christophertobin.github.io
 baseurl: /me3-randomizer
 repository: christophertobin/me3-randomizer
 
-feature_row:
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    title: "JavaScript"
-    excerpt: "Check out the randomizer in plain old vanilla JavaScript"
-    url: "/javascript/"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    title: "React"
-    excerpt: "The randomizer brought to you by the magic that is ReactJS"
-    url: "/react/"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: /assets/images/unsplash-gallery-image-1-th.jpg
-    title: "Angular"
-    excerpt: "The Angularized version of the randomizer"
-    url: "/angular/"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-
 author: 
   name: Christopher Tobin
