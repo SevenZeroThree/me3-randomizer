@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 feature_row:
   - title: "JavaScript"
     excerpt: "Check out the randomizer in plain old vanilla JavaScript"
