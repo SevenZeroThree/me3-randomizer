@@ -18,6 +18,4 @@ feature_row:
     btn_class: "btn--inverse"
 ---
 
-<h1>Home Page</h1>
-
 {% include feature_row %}
