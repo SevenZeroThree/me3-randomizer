@@ -1,12 +1,6 @@
 
 # main links
 main:
-  - title: "Test"
-    children:
-      - title: "JavaScript"
-        url: "/javascript/"
-      - title: "React"
-        url: "/react/"
   - title: "JavaScript"
     url: "/javascript/"
   - title: "React"
