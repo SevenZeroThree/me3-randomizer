@@ -1,0 +1,17 @@
+
+# main links
+main:
+  - title: "JavaScript"
+  - "/javascript/"
+
+  - title: "React"
+  - "/react/"
+
+  - title: "Angular"
+  - "/angular/"
+
+  - title: "Ember"
+  - "/ember/"
+
+  - title: "jQuery"
+  - "/jquery/"
