@@ -2,16 +2,12 @@
 # main links
 main:
   - title: "JavaScript"
-  - "/javascript/"
-
+    url: "/javascript/"
   - title: "React"
-  - "/react/"
-
+    url: "/react/"
   - title: "Angular"
-  - "/angular/"
-
+    url: "/angular/"
   - title: "Ember"
-  - "/ember/"
-
+    url: "/ember/"
   - title: "jQuery"
-  - "/jquery/"
+    url: "/jquery/"
