@@ -1,0 +1,13 @@
+
+# main links
+main:
+  - title: "JavaScript"
+    url: "/javascript/"
+  - title: "React"
+    url: "/react/"
+  - title: "Angular"
+    url: "/angular/"
+  - title: "Ember"
+    url: "/ember/"
+  - title: "jQuery"
+    url: "/jquery/"
