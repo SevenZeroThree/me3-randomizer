@@ -14,6 +14,7 @@ include: ["_pages"]
 
 author: 
   name: Christopher Tobin
+  avatar: https://s.gravatar.com/avatar/d531eea053a5963f5463037fc7732a2e
 
 defaults:
   # _pages
