@@ -10,5 +10,7 @@ url: https://christophertobin.github.io
 baseurl: /me3-randomizer
 repository: christophertobin/me3-randomizer
 
+include: ["_pages"]
+
 author: 
   name: Christopher Tobin
