@@ -1,16 +1,18 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class RegenerateButton extends Component {
-    handleClick() {
-        alert('Regenerate button clicked!');
-    }
     render() {
         return(
             <div>
-                <button onClick={() => this.handleClick()}>Regenerate</button>
+                <button onClick={() => this.props.regenerateHandler()}>Regenerate</button>
             </div>
         );
     }
 }
+
+RegenerateButton.propTypes = {
+    regenerateHandler: PropTypes.func.isRequired
+};
 
 export default RegenerateButton;

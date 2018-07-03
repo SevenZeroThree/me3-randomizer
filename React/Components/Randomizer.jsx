@@ -6,12 +6,16 @@ import Weapon from './Weapon';
 import RegenerateButton from './RegenerateButton';
 
 class Randomizer extends Component {
+    handleRegenerate() {
+        alert('Regenerating random class');
+    }
+
     render() {
         return (
             <div>
                 <Character character={ this.props.randomClass.character} />
                 <Weapon weapon={this.props.randomClass.weapon} />
-                <RegenerateButton />
+                <RegenerateButton regenerateHandler={() => this.handleRegenerate()} />
             </div>
         );
     }
