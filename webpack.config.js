@@ -6,7 +6,7 @@ module.exports = {
         helpers: './index.js',
         jQueryRandomizer: './jQuery/jquery.randomizer.js',
         JavaScriptRandomizer: './JavaScript/javascript.randomizer.js',
-        ReactRandomizer: './react/react.randomizer.js'
+        ReactRandomizer: './react/index.js'
     },
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
