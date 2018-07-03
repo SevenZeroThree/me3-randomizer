@@ -13,8 +13,8 @@ class Character extends Component {
 
 Character.propTypes = {
     character: PropTypes.shape({
-        name: PropTypes.string
-    })
+        name: PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default Character;

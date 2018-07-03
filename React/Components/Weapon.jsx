@@ -13,8 +13,8 @@ class Weapon extends Component{
 
 Weapon.propTypes = {
     weapon: PropTypes.shape({
-        name: PropTypes.string
-    })
+        name: PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default Weapon;
