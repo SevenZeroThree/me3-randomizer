@@ -1,8 +1,6 @@
 import React, { Component} from "react";
 
-import Character from './Components/Character';
-import Weapon from './Components/Weapon';
-import RegenerateButton from './Components/RegenerateButton';
+import Randomizer from './Components/Randomizer';
 
 let randomResult = {
   character: {
@@ -18,9 +16,7 @@ class App extends Component {
     return(
       <div>
         <h1>Welcome to the React randomizer!</h1>
-        <Character character={randomResult.character} />
-        <Weapon weapon={randomResult.weapon} />
-        <RegenerateButton />
+        <Randomizer randomClass={randomResult} />
       </div>
     );
   }
