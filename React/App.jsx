@@ -2,6 +2,7 @@ import React, { Component} from "react";
 
 import Character from './Components/Character';
 import Weapon from './Components/Weapon';
+import RegenerateButton from './Components/RegenerateButton';
 
 let randomResult = {
   character: {
@@ -19,6 +20,7 @@ class App extends Component {
         <h1>Welcome to the React randomizer!</h1>
         <Character character={randomResult.character} />
         <Weapon weapon={randomResult.weapon} />
+        <RegenerateButton />
       </div>
     );
   }
