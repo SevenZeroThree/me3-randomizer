@@ -6,7 +6,7 @@ module.exports = {
         helpers: './index.js',
         jQueryRandomizer: './jQuery/jquery.randomizer.js',
         JavaScriptRandomizer: './JavaScript/javascript.randomizer.js',
-        ReactRandomizer: './react/index.js'
+        ReactRandomizer: './react/index.jsx'
     },
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
@@ -16,10 +16,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader'
+                },
+                resolve: {
+                    extensions: ['.js', '.jsx'],
                 }
             }
         ]
