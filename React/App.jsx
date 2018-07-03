@@ -7,7 +7,7 @@ let randomResult = {
   character: {
     name: "My Character"
   },
-  weapons: {
+  weapon: {
     name: "My Weapon"
   }
 }
