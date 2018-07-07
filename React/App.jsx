@@ -4,6 +4,8 @@ import Character from './Components/Character';
 import Weapon from './Components/Weapon';
 import RegenerateButton from './Components/RegenerateButton';
 
+import Randomizer from '../helpers/randomizer';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +21,11 @@ class App extends Component {
   }
 
   handleRegenerate() {
-      alert('Regenerating random class from App');
+      Randomizer.getRandomClass()
+        .then((randomClass) => {
+            this.setState({character: randomClass.character});
+            this.setState({weapon: randomClass.weapon});
+        });
   }
 
   render() {
