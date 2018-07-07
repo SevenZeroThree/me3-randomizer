@@ -1,22 +1,33 @@
 import React, { Component} from "react";
 
-import Randomizer from './Components/Randomizer';
-
-let randomResult = {
-  character: {
-    name: "My Character"
-  },
-  weapon: {
-    name: "My Weapon"
-  }
-}
+import Character from './Character';
+import Weapon from './Weapon';
+import RegenerateButton from './RegenerateButton';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      character: {
+        name: "My Character"
+      },
+      weapon: {
+        name: "My Weapon"
+      }
+    }
+  }
+
+  handleRegenerate() {
+      alert('Regenerating random class from App');
+  }
+
   render() {
     return(
       <div>
-        <h1>Welcome to the React randomizer!</h1>
-        <Randomizer randomClass={randomResult} />
+        <Character character={ this.state.character} />
+        <Weapon weapon={this.state.weapon} />
+        <RegenerateButton regenerateHandler={() => this.handleRegenerate()} />
       </div>
     );
   }
