@@ -32,11 +32,14 @@ class App extends Component {
 
   render() {
     return(
-      <div className="feature__wrapper">
-        <Character character={ this.state.character} />
-        <Weapon weapon={this.state.weapon} />
+      <div>
+        <div className="feature__wrapper">
+          <Character character={ this.state.character} />
+          <Weapon weapon={this.state.weapon} />
+        </div>
         <RegenerateButton regenerateHandler={() => this.generateRandomClass()} />
       </div>
+      
     );
   }
 }
