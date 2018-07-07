@@ -1,14 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 
-class RegenerateButton extends Component {
-    render() {
-        return(
-            <div>
-                <button className="btn btn--info btn--large" onClick={() => this.props.regenerateHandler()}>Regenerate</button>
-            </div>
-        );
-    }
+function RegenerateButton(props) {
+    return (
+        <button className="btn btn--info btn--large" onClick={props.regenerateHandler}>Regenerate</button>
+    );
 }
 
 RegenerateButton.propTypes = {
