@@ -5,7 +5,7 @@ class RegenerateButton extends Component {
     render() {
         return(
             <div>
-                <button onClick={() => this.props.regenerateHandler()}>Regenerate</button>
+                <button className="btn btn--info btn--large" onClick={() => this.props.regenerateHandler()}>Regenerate</button>
             </div>
         );
     }
