@@ -1,8 +1,8 @@
 import React, { Component} from "react";
 
-import Character from './Character';
-import Weapon from './Weapon';
-import RegenerateButton from './RegenerateButton';
+import Character from './Components/Character';
+import Weapon from './Components/Weapon';
+import RegenerateButton from './Components/RegenerateButton';
 
 class App extends Component {
   constructor(props) {
