@@ -18,14 +18,16 @@ class App extends Component {
         name: "My Weapon"
       }
     }
+
+    this.generateRandomClass();
   }
 
-  handleRegenerate() {
-      Randomizer.getRandomClass()
-        .then((randomClass) => {
-            this.setState({character: randomClass.character});
-            this.setState({weapon: randomClass.weapon});
-        });
+  generateRandomClass() {
+    Randomizer.getRandomClass()
+      .then((randomClass) => {
+          this.setState({character: randomClass.character});
+          this.setState({weapon: randomClass.weapon});
+      });
   }
 
   render() {
@@ -33,7 +35,7 @@ class App extends Component {
       <div>
         <Character character={ this.state.character} />
         <Weapon weapon={this.state.weapon} />
-        <RegenerateButton regenerateHandler={() => this.handleRegenerate()} />
+        <RegenerateButton regenerateHandler={() => this.generateRandomClass()} />
       </div>
     );
   }
