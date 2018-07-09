@@ -12,14 +12,12 @@ class App extends Component {
 
     this.state = {
       character: {
-        name: "My Character"
+        name: ""
       },
       weapon: {
-        name: "My Weapon"
+        name: ""
       }
-    }
-
-    this.generateRandomClass();
+    };
   }
 
   generateRandomClass() {
@@ -28,6 +26,10 @@ class App extends Component {
           this.setState({character: randomClass.character});
           this.setState({weapon: randomClass.weapon});
       });
+  }
+
+  componentDidMount() {
+    this.generateRandomClass();
   }
 
   render() {
