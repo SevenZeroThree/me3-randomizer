@@ -6,9 +6,9 @@ locale: en-US
 title: Mass Effect 3 Multiplayer Randomizer
 name: Christopher Tobin
 description: Whether you are looking for a challenge, or just looking for a new setup, the Mass Effect 3 Random Class Generator solves all! What setup will you get?
-url: https://christophertobin.github.io
+url: https://sevenzerothree.github.io
 baseurl: /me3-randomizer
-repository: christophertobin/me3-randomizer
+repository: sevenzerothree/me3-randomizer
 
 include: ["_pages"]
 
@@ -17,7 +17,7 @@ author:
   avatar: https://s.gravatar.com/avatar/d531eea053a5963f5463037fc7732a2e
   bio: "Just some idiot who loves web development and video games."
   location: "FL"
-  github: "christophertobin"
+  github: "sevenzerothree"
 
 defaults:
   # _pages
